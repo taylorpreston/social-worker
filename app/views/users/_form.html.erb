@@ -1,0 +1,66 @@
+<div class="columns is-multiline">
+  <div class="column is-half">
+    <div class="field">
+      <%= form.label :first_name, class: "label" %>
+      <div class="control">
+        <%= form.text_field :first_name, class:"input is-primary", placeholder: "First Name"%>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-half">
+    <div class=" field">
+      <%= form.label :last_name, class: "label" %>
+      <div class="control">
+        <%= form.text_field :last_name, class:"input is-primary", placeholder: "Last Name"%>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-full">
+    <div class="field">
+      <%= form.label :email, class: "label" %>
+      <div class="control">
+        <%= form.text_field :email, class:"input is-primary", placeholder: "Email"%>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-full">
+    <div class="field">
+      <%= form.label :password, class: "label" %>
+      <div class="control">
+        <%= form.password_field :password, class: "input is-primary", placeholder: "Password" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-one-third">
+    <div class="field">
+      <%= form.label :license_number, class: "label" %>
+      <div class="control">
+        <%= form.text_field :license_number, class: "input is-primary", placeholder: "License Number"%>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-one-third">
+    <div class="field">
+      <%= form.label :license_expiration_date, class: "label" %>
+      <div class="control">
+        <%= form.text_field :license_expiration_date, class: "input is-primary", placeholder: "License Expiration Date"%>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-one-third">
+    <div class="field">
+      <%= form.label :license_type, class: "label" %>
+      <div class="control">
+        <div class="select is-primary is-fullwidth">
+          <%= form.select :license_type, options: @user.license_types %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

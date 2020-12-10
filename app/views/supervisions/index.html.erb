@@ -1,0 +1,6 @@
+<div>
+  index supervisions
+  <% @supervisions.each do |s| %>
+  <%= render partial: 'shared/supervision', locals: { supervision: s }%>
+  <% end %>
+</div>

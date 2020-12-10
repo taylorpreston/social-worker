@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="columns">
+    <div class="column is-8 is-offset-2">
+      <h2><%= t(".title") %></h2>
+      <%= form_for @supervision do |form|%>
+      <%= render partial: '/supervisions/form', object: form %>
+      <div class="column is-offset-4 is-4 mt-5">
+        <%= form.submit class: "button is-rounded is-large is-primary is-fullwidth"%>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
